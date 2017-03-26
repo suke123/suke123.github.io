@@ -8,6 +8,11 @@ body {
     background-color: white;
 }
 
+.jumbotron {
+			background-image: url("images/header-img.png");
+			color: white;
+}
+
 h2{
   position: relative;
   padding: 0.6em;
