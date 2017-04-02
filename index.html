@@ -29,26 +29,26 @@
     </dl> -->
 
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Takanori Sukekiyo's Portfolio</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">SUKEKIYO's PAGE</a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#profile">Profile</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Takanori Sukekiyo's Portfolio</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">SUKEKIYO's PAGE</a>
         </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#skills">Skills</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
     </nav>
     <div class="jumbotron">
   		<div class="container">
@@ -64,57 +64,139 @@
   		</div>
 	  </div>
     <div class="container">
-        <div class="starter-template">
+      <div class="starter-template">
             <!--<h1>Takanori Sukekiyo's Portfolio</h1>
-            <p class="lead">世界の皆さん、こんにちは。</p>-->
-            <h2 id="profile">Profile</h2>
-            <div class="row">
-              <div class="col-sm-6">
-                <p>name：助清　太紀</p>
-              </div>
-              <div class="col-sm-6"></div>
+        <p class="lead">世界の皆さん、こんにちは。</p>-->
+        <h2 id="profile">Profile</h2>
+        <div class="row">
+          <div class="col-sm-12">
+            <table class="profile">
+              <tr>
+                <th class="arrow_box">氏名</th>
+                <td class="arrow_box">助清　太紀（すけきよ　たかのり）
+                </td>
+              </tr>
+              <tr>
+                <th>大学・学部学科</th>
+                <td>東京電機大学　工学部　情報通信工学科　3年</td>
+              </tr>
+              <tr>
+                <th>サークル・部活</th>
+                <td>旭祭実行委員会（学園祭実行委員会）</td>
+              </tr>
+              <tr>
+                <th>趣味</th>
+                <td>映画鑑賞</td>
+              </tr>
+              <tr>
+                <th>サークル・部活</th>
+                <td>旭祭実行委員会（学園祭実行委員会）</td>
+              </tr>
+              <tr>
+                <th>サークル・部活</th>
+                <td>旭祭実行委員会（学園祭実行委員会）</td>
+              </tr>
+              <tr>
+                <th>サークル・部活</th>
+                <td>旭祭実行委員会（学園祭実行委員会）</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-sm-6"></div>
+        </div>
+        <hr>
+        <h2 id="works">Works</h2>
+        <!--<div class="row">
+          <div class="col-sm-12">-->
+            <h3>ツムツム</h3>
+            <!-- 折り畳み展開ポインタ -->
+            <div onclick="obj=document.getElementById('open01').style;　obj.display=(obj.display=='none')?'block':'none';">
+              <a style="cursor:pointer;"><img src="images/tumutumu_logo.png" class="img-responsive" width="500px" height="350px"＞</a>
             </div>
-            <hr>
-            <h2 id="works">Works</h2>
-            <div class="row">
-              <div class="col-sm-6">
-                <h3>ツムツム</h3>
-                <table summary="ツムツム概要">
-                  <tr>
-                    <th class="t_top" width="180">概要</th>
-                    <td class="t_top">PC用２Dパズルゲーム。Unityの勉強のために制作しました。某ゲームをUnityで作りました。と言っても簡易版です。同じ色のボールを３つ以上繋げて消すゲームです。オンラインではなく、過去の自分のスコアを更新していくゲームです。<br>
-                    進撃のツムツムとなっていますが、もともとツムツムに登場するキャラクターが進撃の巨人のキャラクターだったらと思い、作りましたが、今回これに載せるにあたり著作権などの問題が怖かったので、ツムの画像は変えました。<br>
+            <!--// 折り畳み展開ポインタ -->
+            <!-- 折り畳まれ部分 -->
+            <div id="open01" style="display:none;clear:both;">
+              <!--ここの部分が折りたたまれる＆展開される部分になります。自由に記述してください。-->
+              <table class="works">
+                <tr>
+                  <th class="t_top" width="180">概要</th>
+                  <td class="t_top">PC用２Dパズルゲーム。Unityの勉強のために制作しました。同じ色のボールを３つ以上繋げて消すゲームです。<br>
+                    「進撃のツムツム」となっていますが、もともとツムツムに登場するキャラクターが進撃の巨人のキャラクターだったらと思い、作りましたが、著作権などの問題が怖かったので、ツムの画像は変えました。<br>
+                      右画像をクリックでゲームページに飛びます。
+                  </td>
+                </tr>
+                <tr>
+                  <th>使用技術</th>
+                  <td>
+                    <img src="images/unity_icon.png"><img src="images/github_icon.png"><img src="images/Csharp_icon.png" width="60px">
+                  </td>
+                </tr>
+                <tr>
+                  <th>制作期間</th>
+                  <td>約２週間</td>
+                </tr>
+                <tr>
+                  <th>プレイ</th>
+                  <td><a href="http://suke123.github.io/Tsumutsmu/">ここをクリックするとゲームページに飛びます。</a></td>
+                </tr>
+              </table>
+            </div>
+            <!--<div class="col-sm-6">
+              <a href="http://suke123.github.io/Tsumutsmu/">
+                <img src="images/tumutumu_logo.png" class="img-responsive">
+              </a>
+            </div>
+          </div>
+        </div>-->
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>タイホウ戦記</h3>
+            <!-- 折り畳み展開ポインタ -->
+            <div onclick="obj=document.getElementById('open02').style; obj.display=(obj.display=='none')?'block':'none';">
+              <a style="cursor:pointer;"><img src="images/cannon_logo.png" class="img-responsive" width="500px" height="350px"></a>
+            </div>
+            <!--// 折り畳み展開ポインタ -->
+
+            <!-- 折り畳まれ部分 -->
+            <div id="open02" style="display:none;clear:both;">
+              <!--ここの部分が折りたたまれる＆展開される部分になります。自由に記述してください。-->
+              <table class="works">
+                <tr>
+                  <th class="t_top" width="180">概要</th>
+                  <td class="t_top">PC用３Dシューティングゲーム。大砲を矢印キーで操作し、奥から迫り来る敵を倒しクリアを目指すゲームです。矢印キーで大砲の向きを移動、スペーズキーで弾を発射と簡単に操作ができます。友人と２人で制作しました。<br>
                     右画像をクリックでゲームページに飛びます。
                   </td>
-                  </tr>
-                  <tr>
-                    <th>使用技術</th>
-                    <td><img src="images/unity_icon.png"><img src="images/github_icon.png">C#</td>
-                  </tr>
-                  <tr>
-                    <th>制作期間</th>
-                    <td>約２週間</td>
-                  </tr>
-                </table>
-                <!-- <p>概要</br>PC用２Dパズルゲーム。Unityの勉強のために制作しました。某ゲームをUnityで作りました。と言っても簡易版です。同じ色のボールを３つ以上繋げて消すゲームです。オンラインではなく、過去の自分のスコアを更新していくゲームです。スキルや技のようなものはありません。</p>
-                <p>制作期間：約２週間</p> -->
-              </div>
-              <div class="col-sm-6"><a href="http://suke123.github.io/Tsumutsmu/"><img src="images/tumutumu_logo.png" class="img-responsive"></a></div>
+                </tr>
+                <tr>
+                  <th>使用技術</th>
+                  <td><img src="images/unity_icon.png"><img src="images/github_icon.png"><img src="images/Csharp_icon.png" width="60px">
+                  </td>
+                </tr>
+                <tr>
+                  <th>制作期間</th>
+                  <td>約１ヶ月半</td>
+                </tr>
+                <tr>
+                  <th>プレイ</th>
+                  <td><a href="http://suke123.github.io/Cannon_Game/">ここをクリックするとゲームページに飛びます。</a></td>
+                </tr>
+              </table>
             </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <h3><a href="http://suke123.github.io/Cannon_Game/">タイホウ戦記</a></h3>
-                <p>概要</br>PC用３Dシューティングゲーム。大砲を矢印キーで操作し、奥から迫り来る敵を倒しクリアを目指すゲームです。矢印キーで大砲の向きを移動、スペーズキーで弾を発射と簡単に操作ができます。友人と２人で制作しました。</p>
-                <p>制作期間：１ヶ月半</p>
-              </div>
-              <div class="col-sm-6"></div>
-            </div>
-            <hr>
-            <h2 id="skills">Skills</h2>
-            <p>説明文：あいうえおあいうえおあいうえお</p>
-            <div class="row starter-template">
-            <a class="btn btn-primary" href="#">Topに戻る</a>
+          </div>
+          <!--// 折り畳まれ部分 -->
+          <!--<div class="col-sm-6">
+            <a href="http://suke123.github.io/Cannon_Game/">
+              <img src="images/tumutumu_logo.png" class="img-responsive">
+            </a>
+          </div>-->
         </div>
+        <hr>
+        <h2 id="skills">Skills</h2>
+        <p>説明文：あいうえおあいうえおあいうえお</p>
+        <div class="row starter-template">
+          <a class="btn btn-primary" href="#">Topに戻る</a>
+        </div>
+      </div>
     </div>
     <!-- /.container -->
 

@@ -1,6 +1,7 @@
 body {
     padding-top: 50px;
     background-color: lightgray;
+    background-image: url("images/cocina.gif");
 }
 
 .starter-template {
@@ -50,27 +51,95 @@ h2:after {
   height: 0;
 }
 
-table {
+table.works {
 	border-collapse: collapse;
 	width:100%;
+  color: black;
 }
 th.t_top {
     border-top: #be1309 4px solid;
+    background-color: lightgray;
 }
-th {
-	border-bottom: #e3e3e3 1px dotted;
+table.works th {
+	border-bottom: #e3e3e3 2px dotted;
 	text-align: left;
 	padding: 10px;
 	font-weight: normal;
+  background-color: lightgray;
 }
 td.t_top {
 	border-top: #b3b3b3 4px solid;
 }
-td {
-	border-bottom: #e3e3e3 1px dotted;
+table.works td {
+	border-bottom: #e3e3e3 2px dotted;
 	text-align: left;
 	padding: 10px;
 }
+
+table.profile {
+    width: 900px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0px 0px;
+    font-size: 18px;
+}
+
+table.profile th,
+table.profile td {
+    padding: 20px;
+    border-bottom: #e3e3e3 3px dotted;
+}
+
+table.profile th {
+    background: #295890;
+    vertical-align: middle;
+    text-align: center;
+    width: 150px;
+    overflow: visible;
+    position: relative;
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+table.profile th:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #295890;
+    border-width: 10px;
+    margin-top: -10px;
+}
+/* firefox */
+@-moz-document url-prefix() {
+    table.company th::after {
+        float: right;
+        padding: 0;
+        left: 30px;
+        top: 10px;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: relative;
+        pointer-events: none;
+        border: 10px solid transparent;
+        border-left: #295890 10px solid;
+        margin-top: -10px;
+    }
+}
+
+table.profile td {
+    background: #f8f8f8;
+    width: 360px;
+    padding-left: 20px;
+}
+
 /*tr:hover {
     background: #3D80DF;
     color: #FFFFFF;
