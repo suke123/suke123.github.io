@@ -78,7 +78,7 @@ table.works td {
 
 table.profile {
     width: 900px;
-    margin: 0 auto;
+    margin: 10px auto;
     border-collapse: separate;
     border-spacing: 0px 0px;
     font-size: 18px;
@@ -140,14 +140,21 @@ table.profile td {
     padding-left: 20px;
 }
 
-img.works-img {
+/*img.works-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 h3{
   color: black;
+}
+
+.works-text {
+  margin-left: 150px;
+  /*margin-right: 150px;*/
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 /*tr:hover {
     background: #3D80DF;
